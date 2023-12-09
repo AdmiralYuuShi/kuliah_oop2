@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MhsView from '../views/MahasiswaView.vue'
+import MhsFormView from '../views/MahasiswaFormView.vue'
 import MatkulView from '../views/MatkulView.vue'
 import DosenView from '../views/DosenView.vue'
 import KendaraanView from '../views/KendaraanView.vue'
@@ -18,12 +19,17 @@ const router = createRouter({
       component: MhsView
     },
     {
-      path: '/matkul_entry',
+      path: '/mahasiswa_form',
+      name: 'Form Mahasiswa',
+      component: MhsFormView
+    },
+    {
+      path: '/matkul',
       name: 'matkul',
       component: MatkulView
     },
     {
-      path: '/dosen_entry',
+      path: '/dosen',
       name: 'Dosen',
       component: DosenView
     },

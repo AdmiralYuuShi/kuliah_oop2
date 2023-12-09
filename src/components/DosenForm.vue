@@ -1,4 +1,5 @@
 <template>
+  <h1>Input Dosen</h1>
   <v-text-field v-model="dosen.nidn" clearable hide-details="auto" label="NIDN"></v-text-field>
   <v-text-field v-model="dosen.nama" clearable hide-details="auto" label="Nama"></v-text-field>
   <v-radio-group v-model="dosen.jenisKelamin" inline label="Jenis Kelamin">

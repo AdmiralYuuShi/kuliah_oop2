@@ -1,4 +1,5 @@
 <template>
+  <h1>Input Mata Kuliah</h1>
   <v-text-field v-model="kode" clearable hide-details="auto" label="Kode Matkul"></v-text-field>
   <v-text-field v-model="nama" clearable hide-details="auto" label="Nama Matkul"></v-text-field>
 </template>
