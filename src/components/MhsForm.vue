@@ -36,6 +36,16 @@ import { useMhsStore } from '@/stores/mahasiswa';
 import { mapWritableState } from 'pinia';
 
 export default {
+  data: () => ({
+    count: 0,
+  }),
+
+  methods: {
+    increment() {
+      this.count++;
+    }
+  },
+
   computed: {
     ...mapWritableState(useMhsStore, ['mhs']),
   },
